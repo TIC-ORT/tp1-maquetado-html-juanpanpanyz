@@ -1,0 +1,16 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+  }
+  
+  .navbar {
+    background-color: #FFD680;
+    height: 50px;
+  }
+
+  header {
+    background-color: #ffd180;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+  }
