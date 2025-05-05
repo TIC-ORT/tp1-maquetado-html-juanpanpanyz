@@ -9,42 +9,122 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
   background-color: #FFD680;
+  padding: 40px;
 }
 
-@media (max-width: 600px) {
-  .header {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 20px;
-  }
-
-  .header__image {
-    width: 100px;
-    height: 100px;
-  }
-
-  .header__text .line {
-    width: 100%;
-  }
-
-  .header__text .title {
-    width: 60%;
-  }
-
-  .header__text .short {
-    width: 40%;
-  }
+.navbar__logo {
+  width: 100px;
+  height: 100px;
+  background-color: #FFC75F;
 }
 
-.como-funciona img {
+.navbar__text-placeholder {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 60%;
+}
+
+.line {
+  height: 10px;
+  background-color: white;
+  width: 60%;
+  border-radius: 4px;
+}
+
+.line.wide {
+  width: 25%;
+  background-color: #FFB347;
+}
+
+.line.short {
+  width: 15%;
+}
+
+header {
+    background-color: #ffd180;
+    padding-left: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  padding: 40px;
+  justify-items: center;
+  background-color: white;
+}
+
+.cuadrado {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
   width: 200px;
-  margin-top: 20px;
-  padding-left: 100px;
+  border-radius: 8px;
 }
-.logo img {
-  width: 200px;
-  margin-top: 20px;
-  padding-left: 10px;
+
+.cuadrado-image {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 15px;
+}
+
+.cuadrado-line {
+  width: 100%;
+  height: 12px;
+  background-color: white;
+  margin: 5px 0;
+  border-radius: 4px;
+}
+
+.cuadrado-line.short {
+  width: 60%;
+}
+
+.cuadrado.blue {
+  background-color: #B2EBF2;
+}
+
+.cuadrado.blue .cuadrado-image {
+  background-color: #80DEEA;
+}
+
+.cuadrado.red {
+  background-color: #FFAB91;
+}
+
+.cuadrado.red .cuadrado-image {
+  background-color: #FF7043;
+}
+
+.cuadrado.yellow {
+  background-color: #FFD54F;
+}
+
+.cuadrado.yellow .cuadrado-image {
+  background-color: #FFB300;
+}
+
+.footer {
+  background-color: #F0F0F0;
+  display: flex;
+  justify-content: space-around;
+  padding: 40px;
+}
+
+.footer__item {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer__line {
+  width: 150px;
+  height: 10px;
+  background-color: #CCC;
+  border-radius: 4px;
 }
